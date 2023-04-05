@@ -2,6 +2,7 @@ bind ${BIND_ADDRESS}
 port ${PORT}
 cluster-enabled yes
 cluster-config-file nodes.conf
+protected-mode no
 cluster-node-timeout 5000
 appendonly yes
 dir /redis-data/${PORT}
